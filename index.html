@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joseph & Anjali's Engagement</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
     }
+
     body, html {
       margin: 0;
       padding: 0;
@@ -67,10 +68,22 @@
 
     header, footer {
       background: none;
-      text-align: center;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.5);
       padding: 2rem;
-      max-width: 800px;
-      margin: auto;
+    }
+
+    header h1,
+    header p,
+    header h2 {
+      text-shadow: 0 0 8px rgba(0,0,0,0.8);
+      color: #fff;
+    }
+
+    header p {
+      font-size: 1.2rem;
     }
 
     section {
@@ -79,19 +92,18 @@
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
-      text-align: center;
       padding: 2rem;
-      max-width: 800px;
-      margin: auto;
+      text-align: center;
     }
 
     .location {
       background-color: rgba(255, 255, 255, 0.8);
       color: #000;
-      margin: 1rem 0;
+      margin: 1rem auto;
       padding: 1.5rem;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      max-width: 800px;
     }
 
     .location h3 {
@@ -111,16 +123,18 @@
       background-color: rgba(0, 0, 0, 0.5);
       font-size: 0.9rem;
       color: #fff;
+      text-align: center;
+      padding: 2rem;
     }
   </style>
 </head>
 <body>
   <div class="top-panel">
     <div class="slideshow">
-      <img src="images/IMG_3731.jpeg" alt="Photo 1" />
-      <img src="images/IMG_3700.jpeg" alt="Photo 2" />
-      <img src="images/IMG_3697.jpeg" alt="Photo 3" />
-      <img src="images/IMG_3694.jpeg" alt="Photo 4" />
+      <img src="images/IMG_3731.jpeg" alt="Photo 1">
+      <img src="images/IMG_3700.jpeg" alt="Photo 2">
+      <img src="images/IMG_3697.jpeg" alt="Photo 3">
+      <img src="images/IMG_3694.jpeg" alt="Photo 4">
     </div>
     <div class="overlay"></div>
   </div>
@@ -136,14 +150,22 @@
       <h3>⛪ Engagement Ceremony</h3>
       <p><strong>Time:</strong> 10:45 AM</p>
       <p><strong>Venue:</strong> St. Mary's Syro Malabar Catholic Church</p>
-      <p><strong>Address:</strong> <a href="https://www.google.com/maps?q=926+Round+Swamp+Rd,+Old+Bethpage,+NY" target="_blank">926 Round Swamp Rd, Old Bethpage, NY</a></p>
+      <p><strong>Address:</strong>
+        <a href="https://www.google.com/maps?q=926+Round+Swamp+Rd,+Old+Bethpage,+NY" target="_blank">
+          926 Round Swamp Rd, Old Bethpage, NY
+        </a>
+      </p>
     </div>
 
     <div class="location">
       <h3>🍽 Reception</h3>
       <p><strong>Time:</strong> 12:00 PM – 3:00 PM</p>
       <p><strong>Venue:</strong> Tikka Banquet Hall</p>
-      <p><strong>Address:</strong> <a href="https://www.google.com/maps?q=200+N+Broadway,+Hicksville,+NY+11801" target="_blank">200 N Broadway, Hicksville, NY 11801</a></p>
+      <p><strong>Address:</strong>
+        <a href="https://www.google.com/maps?q=200+N+Broadway,+Hicksville,+NY+11801" target="_blank">
+          200 N Broadway, Hicksville, NY 11801
+        </a>
+      </p>
     </div>
   </section>
 
