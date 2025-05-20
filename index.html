@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joseph & Anjali's Engagement</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      color: #fff;
+    }
+    .slideshow {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -2;
+      overflow: hidden;
+    }
+    .slideshow img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      animation: fade 32s infinite;
+    }
+    .slideshow img:nth-child(1) { animation-delay: 0s; }
+    .slideshow img:nth-child(2) { animation-delay: 8s; }
+    .slideshow img:nth-child(3) { animation-delay: 16s; }
+    .slideshow img:nth-child(4) { animation-delay: 24s; }
+
+    @keyframes fade {
+      0%   { opacity: 0; }
+      10%  { opacity: 1; }
+      30%  { opacity: 1; }
+      40%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    header, section, footer {
+      position: relative;
+      text-align: center;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    header {
+      color: #fff;
+    }
+    .location {
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #333;
+      margin: 1rem 0;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .location h3 {
+      margin-top: 0;
+    }
+    footer {
+      font-size: 0.9rem;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="slideshow">
+    <img src="images/IMG_3731.jpeg" alt="Photo 1">
+    <img src="images/IMG_3700.jpeg" alt="Photo 2">
+    <img src="images/IMG_3697.jpeg" alt="Photo 3">
+    <img src="images/IMG_3694.jpeg" alt="Photo 4">
+  </div>
+  <div class="overlay"></div>
+
+  <header>
+    <h1>Joseph & Anjali's Engagement</h1>
+    <p>You're invited to join us in celebration!</p>
+    <h2>June 28, 2025</h2>
+  </header>
+
+  <section>
+    <div class="location">
+      <h3>🏠 Engagement Ceremony</h3>
+      <p><strong>Time:</strong> 10:30 AM</p>
+      <p><strong>Venue:</strong> St. Mary's Syro Malabar Catholic Church</p>
+      <p><strong>Address:</strong> 926 Round Swamp Rd, Old Bethpage, NY</p>
+    </div>
+
+    <div class="location">
+      <h3>🍽 Reception</h3>
+      <p><strong>Time:</strong> 12:00 PM – 5:00 PM</p>
+      <p><strong>Venue:</strong> Tikka Banquet Hall</p>
+      <p><strong>Address:</strong> 200 N Broadway, Hicksville, NY 11801</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>We can't wait to celebrate with you! Love, Joseph & Anjali</p>
+  </footer>
+</body>
+</html>
