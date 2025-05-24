@@ -121,24 +121,6 @@
       text-align: center;
       padding: 2rem;
     }
-
-    /* ❄️ Snowflake styles */
-    .snowflake {
-      color: #fff;
-      font-size: 1.2rem;
-      position: fixed;
-      top: -2rem;
-      z-index: 9999;
-      animation: fall linear forwards;
-      pointer-events: none;
-    }
-
-    @keyframes fall {
-      to {
-        transform: translateY(110vh);
-        opacity: 0;
-      }
-    }
   </style>
 </head>
 
@@ -197,22 +179,5 @@
   <footer>
     <p>We can't wait to celebrate with you!<br>Love, Joseph & Anjali</p>
   </footer>
-
-  <script>
-    function createSnowflake() {
-      const snowflake = document.createElement('div');
-      snowflake.classList.add('snowflake');
-      snowflake.textContent = '❄';
-      snowflake.style.left = Math.random() * 100 + 'vw';
-      snowflake.style.animationDuration = (Math.random() * 3 + 2) + 's';
-      snowflake.style.fontSize = (Math.random() * 10 + 10) + 'px';
-      document.body.appendChild(snowflake);
-
-      setTimeout(() => snowflake.remove(), 5000);
-    }
-
-    let snowInterval = setInterval(createSnowflake, 200);
-    setTimeout(() => clearInterval(snowInterval), 3000);
-  </script>
 </body>
 </html>
